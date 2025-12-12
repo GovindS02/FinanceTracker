@@ -1,0 +1,45 @@
+body {
+    background: #1a1a1a; /* light black / dark gray */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15); /* gold glow */
+    border: 1px solid rgba(255, 215, 0, 0.4); /* gold border */
+    padding: 25px;
+}
+
+.btn-gold {
+    background: linear-gradient(120deg, #f5d66e, #c39b36); /* gold gradient */
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+.btn-gold:hover {
+    background: linear-gradient(120deg, #ffe9a3, #d6b24e); /* lighter gold on hover */
+}
+
+.table {
+    color: #fff;
+}
+.table thead {
+    background: rgba(255, 215, 0, 0.2); /* gold header */
+}
+.table tbody tr {
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.03); /* subtle dark rows */
+}
+.table tbody tr:hover {
+    background: rgba(255, 215, 0, 0.07); /* gold hover */
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f5d66e; /* gold title */
+}

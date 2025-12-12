@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Expense</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="col-md-6 mx-auto glass-card">
+
+        <h2 class="page-title text-center">Update Expense</h2>
+
+        <form th:action="@{'/update/' + ${finance.id}}" method="post">
+
+            <label>Date</label>
+            <input type="date" name="date" th:value="${finance.date}" class="form-control mb-3" required>
+
+            <label>Expense</label>
+            <input type="number" name="expense" th:value="${finance.expense}" class="form-control mb-3" required>
+
+            <label>Budget</label>
+            <input type="number" name="budget" th:value="${finance.budget}" class="form-control mb-4">
+
+            <button class="btn btn-gold w-100">Update</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="/all" class="text-warning">Back</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
