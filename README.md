@@ -42,8 +42,9 @@ cd finance-tracker
 Configure database in application.properties:
 
 export DB_URL=jdbc:mysql://localhost:3306/finance_db
-export DB_USERNAME=root
-export DB_PASSWORD=your_password
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+
 
 
 
