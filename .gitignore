@@ -1,0 +1,36 @@
+
+# Maven / Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Eclipse
+.metadata/
+.recommenders/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+application-local.properties
+application-prod.properties
+
+# Node (if React added later)
+node_modules/
+dist/
+build/
